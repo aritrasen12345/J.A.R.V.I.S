@@ -55,7 +55,7 @@ def takecom():
     return text
 
 def temperature(city):
-    api_add = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=d0816e68fa7c33a5d523e0feb73bdc1c'
+    api_add = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=' # Here add appid 
     print(api_add);
     json_data = requests.get(api_add).json()
     temp = json_data["main"]["temp"]
